@@ -4,11 +4,12 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
+#include <bitset>
 
 using namespace std;
 int main(int argc, char** argv) {
-  string input = string(argv[1]);
-  ifstream in(input);
+  //string input = string(argv[1]);
+  ifstream in(argv[1]);
   vector<string> numbers;
   string line;
   while(getline(in,line)) {
